@@ -1,0 +1,136 @@
+@font-family: inherit;
+@primary-color: #2f3677;
+@second-color: #ff9d47;
+
+.diversely-bar-char {
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .ant-tabs {
+    .ant-tabs-tab {
+      color: #4c4c4c;
+      font-size: 12px;
+      padding: 6px 15px;
+      font-family: @font-family;
+      margin: 0;
+
+      &.ant-tabs-tab-active {
+        background-color: white;
+        outline: unset;
+
+        .ant-tabs-tab-btn {
+          color: #4c4c4c;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-nav {
+      justify-content: center;
+      margin: 0 18px 16px 18px;
+
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+    flex: 0 auto;
+    background-color: #eee;
+    padding: 5px;
+  }
+
+  &.single-chart {
+    .ant-tabs {
+      .ant-tabs-tab {
+        margin-right: 0;
+      }
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+    }
+  }
+
+  .chart-content {
+    background-color: #eee;
+    padding: 14px;
+    max-width: 320px;
+    min-width: 250px;
+    min-height: 270px;
+    max-height: 270px;
+    overflow-x: auto;
+    margin: 0 auto;
+
+    &-inner {
+      margin: 0 auto;
+      display: flex;
+      width: max-content;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &-no-data {
+      align-items: center;
+      height: 100%;
+      display: flex;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+
+  .chart-column {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 17px;
+    max-width: 60px;
+
+    &-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #525252;
+      text-transform: capitalize;
+      margin-bottom: 27px;
+      max-width: 50px;
+    }
+
+    &-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 1 auto;
+      height: 150px;
+      width: 25px;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    &-value {
+      white-space: nowrap;
+    }
+
+    &-val {
+      background: @second-color;
+
+      &.primary {
+        background: @primary-color;
+      }
+
+      &.grey {
+        background: #4c4c4c;
+      }
+
+      &.cyan {
+        background: #227f96;
+      }
+    }
+  }
+}

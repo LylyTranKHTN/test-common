@@ -1,0 +1,104 @@
+.diversely-bar-char ::-webkit-scrollbar {
+  height: 5px;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-tab {
+  color: #4c4c4c;
+  font-size: 12px;
+  padding: 6px 15px;
+  font-family: inherit;
+  margin: 0;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: white;
+  outline: unset;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #4c4c4c;
+  font-weight: 700;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-ink-bar {
+  display: none;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-nav {
+  justify-content: center;
+  margin: 0 18px 16px 18px;
+}
+.diversely-bar-char .ant-tabs .ant-tabs-nav:before {
+  content: none;
+}
+.diversely-bar-char .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+  flex: 0 auto;
+  background-color: #eee;
+  padding: 5px;
+}
+.diversely-bar-char.single-chart .ant-tabs .ant-tabs-tab {
+  margin-right: 0;
+}
+.diversely-bar-char.single-chart .ant-tabs .ant-tabs-ink-bar {
+  display: none;
+}
+.diversely-bar-char .chart-content {
+  background-color: #eee;
+  padding: 14px;
+  max-width: 320px;
+  min-width: 250px;
+  min-height: 270px;
+  max-height: 270px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+.diversely-bar-char .chart-content-inner {
+  margin: 0 auto;
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  height: 100%;
+}
+.diversely-bar-char .chart-content-no-data {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+}
+.diversely-bar-char .chart-column {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 17px;
+  max-width: 60px;
+}
+.diversely-bar-char .chart-column-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #525252;
+  text-transform: capitalize;
+  margin-bottom: 27px;
+  max-width: 50px;
+}
+.diversely-bar-char .chart-column-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 auto;
+  height: 150px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.diversely-bar-char .chart-column-value {
+  white-space: nowrap;
+}
+.diversely-bar-char .chart-column-val {
+  background: #ff9d47;
+}
+.diversely-bar-char .chart-column-val.primary {
+  background: #2f3677;
+}
+.diversely-bar-char .chart-column-val.grey {
+  background: #4c4c4c;
+}
+.diversely-bar-char .chart-column-val.cyan {
+  background: #227f96;
+}
